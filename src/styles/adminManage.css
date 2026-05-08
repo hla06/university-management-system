@@ -1,0 +1,132 @@
+.admin-manage-page {
+  padding: var(--space-2xl);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.admin-manage-page h2 {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+  line-height: var(--line-height-tight);
+}
+
+.tabs {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.tabs button {
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--accent-primary);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tabs button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.manage-card {
+  background: var(--bg-card);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  max-width: 850px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.manage-card h3 {
+  margin-bottom: var(--space-lg);
+  color: var(--text-primary);
+  font-size: var(--text-2xl);
+  line-height: var(--line-height-tight);
+}
+
+.manage-form {
+  display: grid;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+}
+
+.manage-form input,
+.manage-form textarea {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font-size: var(--text-base);
+  transition: 0.2s;
+}
+
+.manage-form input:focus,
+.manage-form textarea:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.manage-form input::placeholder,
+.manage-form textarea::placeholder {
+  color: var(--text-muted);
+}
+  font-size: 15px;
+}
+
+.manage-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.manage-form button {
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  background: #2f66e8;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.items-list {
+  display: grid;
+  gap: 12px;
+}
+
+.manage-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #dde3ee;
+  border-radius: 14px;
+  background: #f9fbff;
+}
+
+.manage-item strong {
+  color: #07142b;
+}
+
+.manage-item p {
+  margin: 6px 0 0;
+  color: #667085;
+}
+
+.manage-item button {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #07142b;
+  color: white;
+  cursor: pointer;
+}

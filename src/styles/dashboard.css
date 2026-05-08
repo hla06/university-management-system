@@ -1,0 +1,104 @@
+.dashboard-pro {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, var(--bg-primary), var(--bg-secondary)),
+    radial-gradient(circle at 20% 20%, rgba(96, 165, 250, 0.45), transparent 35%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2xl);
+}
+
+.dashboard-glow {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background: rgba(96, 165, 250, 0.28);
+  filter: blur(80px);
+  border-radius: 50%;
+  top: 12%;
+  right: 15%;
+}
+
+.dashboard-panel {
+  position: relative;
+  width: min(760px, 100%);
+  padding: var(--space-3xl) var(--space-2xl);
+  border-radius: var(--radius-2xl);
+  text-align: center;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(18px);
+}
+
+.brand-mark {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto var(--space-lg);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent-primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-5xl);
+  font-weight: 900;
+  box-shadow: 0 22px 45px rgba(37, 99, 235, 0.45);
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--text-accent);
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+}
+
+.dashboard-panel h1 {
+  margin: var(--space-md) 0 var(--space-sm);
+  font-size: var(--text-5xl);
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+
+.dashboard-subtitle {
+  max-width: 620px;
+  margin: 0 auto var(--space-xl);
+  color: #dbeafe;
+  font-size: var(--text-lg);
+  line-height: var(--line-height-relaxed);
+}
+
+.dashboard-user {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dashboard-user span {
+  font-weight: 900;
+  font-size: var(--text-lg);
+}
+
+.dashboard-user small {
+  color: var(--text-accent);
+  font-weight: 700;
+}
+.dashboard-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 270px; /* sidebar width */
+  width: calc(100% - 270px);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
